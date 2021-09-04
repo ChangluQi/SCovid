@@ -1,0 +1,504 @@
+// .drawing-panel {
+//   z-index: 999;
+//   position: absolute;
+//   bottom: 20px;
+//   width: 120px;
+//   height: 150px;
+//   right: 20px;
+//   padding: 5px 10px 5px 0;
+//   border-radius: 5px;
+//   //background-image: url("../assets/czzjzt-box260.png");
+//   background-image: url("../assets/homePage/xuanze2.png");
+//   background-size: 100% 100%;
+//   background-repeat: no-repeat;
+//   /*background-color: rgba(9, 48, 71, 1);*/
+//   // border: 1px solid red;
+//   /*box-shadow: 0 2px 6px 0 rgba(27, 142, 236, 0.5);*/
+//   .cell {
+//     align-items: center;
+//     display: flex;
+//     .text {
+//       width: 70px;
+//       text-align: right;
+//       font-weight: bold;
+//     }
+//     .walk {
+//       /*color: green;*/
+//       color: #449665;
+//     }
+//     .bike {
+//       /*color: purple;*/
+//       color: #D148FE;
+//     }
+//     .car {
+//       /*color: red;*/
+//       color: #FD4B57;
+//     }
+//     .default{
+//       /*color: yellow;*/
+//       color: #FDB731;
+//     }
+//     .linehybridss{
+// color: #F37923;
+//     }
+//     .linehybrid{
+// background-color: #F37923;
+//     }
+//     .taxi {
+//       /*color: blue;*/
+//       color: #08D5FE;
+//     }
+//     .train {
+//       color: #6F6B6C;
+//     }
+//     .line {
+//       width: 10px;
+//       height: 10px;
+//       border-radius: 50%;
+//       /*border-top: 2px dashed white;*/
+//       /*margin: auto;*/
+//       margin-left: 20px;
+//       /*flex: 1;*/
+//     }
+//     .linedefault{
+//       /*background-color: yellow;*/
+//       background-color: #FDB731;
+//     }
+//     .linewalk {
+//       /*background-color: green;*/
+//       background-color: #449665;
+//     }
+//     .linebike {
+//       /*background-color: purple;*/
+//       background-color: #D148FE;
+//     }
+//     .linecar {
+//       /*background-color: red;*/
+//       background-color: #FD4B57;
+//     }
+//     .linetaxi {
+//       /*background-color: blue;*/
+//       background-color: #08D5FE;
+//     }
+//     .linetrain {
+//       background-color: #6F6B6C;
+//     }
+//   }
+// }
+
+// .van-uploader__input {
+//   display: none;
+//   color: rgba(255, 255, 255, 0.8);
+// }
+// .infoDialog {
+//   width: 300px;
+//   height: 400px;
+//   overflow: hidden;
+//   display: flex;
+//   flex-direction: column;
+//   right: 50px;
+//   padding-top: 20px;
+//   padding-bottom: 30px;
+//   top: 110px;
+//   //background-image: url("../assets/lishiku_k.png");
+//   //background-image: url("../assets/蓝-背景.png");
+//   background-image: url("../assets/bg_bk3.png");
+//   background-repeat: no-repeat;
+//   background-size: 100% 100%;
+//   background-position-y: -20px;
+//   z-index: 100;
+//   position: fixed;
+//   .dialogClose {
+//     position: absolute;
+//     top: 5px;
+//     right: 10px;
+//     font-size: 18px;
+//     // color: lightgoldenrodyellow;
+//     color: black;
+//     cursor: pointer;
+//     z-index: 1000;
+//   }
+//   .dialogTitle{
+//     width: 100%;
+//     height: 20px;
+//     display: block;
+//     text-align: center;
+//     position: relative;
+//     top:-10px;
+//     line-height: 20px;
+//     font-size: 20px;
+//     letter-spacing: 0.24px;
+//     padding: 0 10px;
+//     font-weight: bold;
+//     background-image: -webkit-linear-gradient(left, #FFD989 20%, #E0AF71 50%, #FFDD94, #FFEFCD);
+//     // background-image: -webkit-linear-gradient(
+//     //   left,
+//     //   orange,
+//     //   orange,
+//     //   orange,
+//     //   orange
+//     // );
+//     // background-image: -webkit-linear-gradient(
+//     //   left,
+//     //   black 20%,
+//     //   black 50%,
+//     //   black,
+//     //   black
+//     // );
+//     -webkit-background-clip: text;
+//     -webkit-text-fill-color: transparent;
+//   }
+//   .dialogContent{
+//     flex: 1;
+//     overflow-y: scroll;
+//     //border: 2px solid lightblue;
+//     .serachItemContent{
+//       .serachItemDetail{
+//         display: flex;
+//         justify-content: flex-start;
+//       }
+//     }
+//     .serachItemContentss{
+//       .serachItemDetail{
+//         display: flex;
+//         justify-content: flex-start;
+//         line-height: 40px;
+//         font-size: 16px;
+//         color: #FFEFCD;
+//         //font-weight: bold;
+//         margin-left: 10px;
+//       }
+//     }
+//   }
+// }
+// .cardBtn {
+//   overflow: hidden;
+//   position: relative;
+//   cursor: pointer;
+//   width: 160px;
+//   height: 40px;
+//   background-image: url("../assets/下一步.png");
+//   background-repeat: no-repeat;
+//   background-size: 100% 100%;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   font-size: 18px !important;
+//   color: #ffffff !important;
+//   &:hover {
+//     color: #ffffff;
+//   }
+// }
+// .backBtn {
+//   width: 30px;
+//   height: 30px;
+//   color: #ffffff;
+//   position: absolute;
+//   left: 20px;
+//   top: 50px;
+//   background-image: url("../assets/返回-hover.png");
+//   background-repeat: no-repeat;
+//   background-size: 100% 100%;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   font-size: 20px;
+//   font-weight: bold;
+//   cursor: pointer;
+// }
+// .commonStyle {
+//   width: 100vw;
+//   height: 100vh;
+//   position: relative;
+//   background-repeat: no-repeat;
+//   background-size: 100% 100%;
+//   background: url("../assets/bg.png");
+//   overflow: hidden;
+//   /*background*/
+//   .xian{
+//     width: 1920px;
+//     height: 1080px;
+//     position: absolute;
+//     bottom: 0;
+//     z-index: -1;
+//   }
+// }
+// .dpBody{
+//   //opacity: 0;
+//   width: calc(100% - 40px);
+//   //border: 2px solid lightblue;
+//   height: calc(100vh - 128px);
+//   //margin-left: 20px;
+//   //margin-top: 20px;
+//   display: flex;
+//   flex-wrap: wrap;
+//   align-content: space-between;
+//   justify-content: space-between;
+//   flex-direction: column;
+
+
+// }
+// .dpBody .mapWrap{
+//   //flex:1;
+//   width: calc(65% - 20px);
+//   height: 100%;
+//   border: 2px solid lightblue;
+// }
+// .dpBody  .rightItem{
+//   width: 35%;
+//   height: calc((100% - 40px)/3);
+//   .rightItemContent{
+//     width: calc(100% - 32px);
+//     height: calc(100% - 70px);
+//     margin-top: 10px;
+//     margin-left: 16px;
+//     border: 2px solid lightblue;
+//   }
+//   /*border: 2px solid lightblue;*/
+// }
+// .dpBody  .rightItem .rightItemContent{
+//     width: calc(100% - 32px);
+//     height: calc(100% - 70px);
+//     margin-top: 10px;
+//     margin-left: 16px;
+//     border: 2px solid lightblue;
+// }
+// /*小盒子*/
+
+// .main-box {
+//   /*width: 100%;*/
+//   /*height: 300px;*/
+//   background: url(../assets/sjglzx-box.png) no-repeat;
+//   background-size: 100% 100%;
+//   /*padding-top: 10px;*/
+//   /*margin-top: 20px;*/
+//   position: relative;
+//   overflow: hidden;
+// }
+
+// .main-left .main-box:first-of-type,
+// .main-right .main-box:first-of-type {
+//   margin-top: 0;
+// }
+
+
+// /*小盒子标题*/
+
+// .main-title {
+//   width: 100%;
+//   height: 40px;
+//   line-height: 40px;
+//   padding-left: 20px;
+//   padding-top: 10px;
+// }
+
+// .main-title>span {
+//   font-size: 20px;
+//   color: #FFF5AB;
+//   letter-spacing: 0.24px;
+//   line-height: 20px;
+//   font-weight: bold;
+//   background-image: -webkit-linear-gradient(left, #FFD989 20%, #E0AF71 50%, #FFDD94, #FFEFCD);
+//   -webkit-background-clip: text;
+//   -webkit-text-fill-color: transparent;
+// }
+
+// /*头部*/
+
+// .header {
+//   width: 100%;
+//   height: 88px;
+//   padding: 0 20px;
+//   position: relative;
+// }
+
+// @keyframes fade-in {
+//   0% {opacity: 0;}/*初始状态 透明度为0*/
+//   40% {opacity: 0;}/*过渡状态 透明度为0*/
+//   100% {opacity: 1;}/*结束状态 透明度为1*/
+// }
+// @-webkit-keyframes fade-in {/*针对webkit内核*/
+//   0% {opacity: 0;}
+//   40% {opacity: 0;}
+//   100% {opacity: 1;}
+// }
+// /*左侧图片*/
+
+// .header .head-left {
+//   width: 35%;
+//   height: 45px;
+//   background: url(../assets/head-left.png) no-repeat;
+//   background-size: 100% 100%;
+//   position: absolute;
+//   left: 20px;
+//   top: 18px;
+
+//   animation: fade-in;/*动画名称*/
+//   animation-duration: 2s;/*动画持续时间*/
+//   -webkit-animation:fade-in 2s;/*针对webkit内核*/
+// }
+
+// @keyframes move{
+//   0%{
+//     opacity: 0;
+//     transform: translateY(-100px);
+//   }
+//   100%{
+//     opacity: 1;
+//     transform: translateY(15px);
+//   }
+// }
+// /*中间标题*/
+
+// .header .head-middle {
+//   width: 30%;
+//   height: 75px;
+//   background: url(../assets/head-midden.png) no-repeat;
+//   background-size: 100% 100%;
+//   position: absolute;
+//   left: 35%;
+//   top: 0;
+//   overflow: hidden;
+//   transform: translateY(-100px);
+//   animation: move 1s forwards 1s;
+//   opacity: 0;
+// }
+
+// .header .head-middle h4 {
+//   margin: 0;
+//   margin-top: 20px;
+//   font-size: 32px;
+//   line-height: 32px;
+//   color: #FFFFFF;
+//   letter-spacing: 0.5px;
+//   text-align: center;
+//   background-image: -webkit-linear-gradient(top, #FFFFFF, #CAF7FF, #459EFC);
+//   -webkit-background-clip: text;
+//   -webkit-text-fill-color: transparent;
+// }
+
+
+// /*右侧图片*/
+
+// .header .head-right {
+//   width: 35%;
+//   height: 45px;
+//   background: url(../assets/head-right.png) no-repeat;
+//   background-size: 100% 100%;
+//   position: absolute;
+//   right: 20px;
+//   top: 18px;
+
+//   animation: fade-in;/*动画名称*/
+//   animation-duration: 2s;/*动画持续时间*/
+//   -webkit-animation:fade-in 2s;/*针对webkit内核*/
+// }
+
+
+// /*两个按钮*/
+
+// .header .btn {
+//   width: 208px;
+//   height: 40px;
+//   border: none;
+//   background-size: 100% 100% !important;
+//   position: absolute;
+//   top: 34px;
+//   font-size: 18px;
+//   color: #FFFFFF;
+//   letter-spacing: 0.28px;
+//   line-height: 36px;
+//   text-align: center;
+//   cursor: pointer;
+
+//   transform: translateY(-100px);
+//   animation: move 1s forwards 1.6s;
+//   opacity: 0;
+// }
+
+// .header .btn>span {
+//   background-image: -webkit-linear-gradient(top, #FFFFFF, #CAF7FF, #459EFC);
+//   -webkit-background-clip: text;
+//   -webkit-text-fill-color: transparent;
+//   line-height: 18px;
+//   font-weight: bold;
+// }
+
+// .header .btn-left-left {
+//   background: url(../assets/left-title.png) no-repeat;
+//   left: calc(35% - 450px);
+// }
+// .header .btn-left {
+//   background: url(../assets/left-title.png) no-repeat;
+//   left: calc(35% - 230px);
+// }
+
+// .header .btn-right {
+//   background: url(../assets/right-title.png) no-repeat;
+//   right: calc(35% - 230px);
+// }
+// .header .btn-right-right {
+//   background: url(../assets/right-title.png) no-repeat;
+//   right: calc(35% - 470px);
+//   width: 230px !important;
+//   // padding-left: 10px;
+// }
+
+
+// /*按钮悬停*/
+
+// .header .btn:hover span {
+//   color: #FFF5AB;
+//   background-image: -webkit-linear-gradient(left, #FFD989 20%, #E0AF71 50%, #FFDD94, #FFEFCD);
+//   -webkit-background-clip: text;
+//   -webkit-text-fill-color: transparent;
+// }
+// .header .activeBtn {
+//   color: #FFF5AB !important;
+//   background-image: -webkit-linear-gradient(left, #FFD989 20%, #E0AF71 50%, #FFDD94, #FFEFCD)!important;
+//   -webkit-background-clip: text!important;
+//   -webkit-text-fill-color: transparent!important;
+// }
+
+
+// /*头部结束*/
+// /*光效*/
+// .Scan {
+//   position: absolute;
+//   top: 0;
+//   right: 0;
+//   bottom: 0;
+//   left: 0;
+
+//   width: 200%;
+//   height: 150px;
+
+//   /* linear-gradient() make a light */
+//   background-image: linear-gradient(
+//     to bottom,
+//     rgba(255, 255, 255, 0),
+//     rgba(255, 255, 255, 0.1),
+//     rgba(255, 255, 255, 0)
+//   );
+
+//   /* rotate light */
+//   transform-origin: center center;
+//   transform: translate(-100%, 50%) rotate(90deg);
+
+//   /* keyframes animation */
+//   animation: ScanLights 5s linear infinite;
+// }
+// .Scan1{
+//   animation: ScanLights 5s linear 1s infinite;
+// }
+// @keyframes ScanLights {
+//   0% {
+//     transform: translate(-100%, 50%) rotate(90deg);
+//   }
+//   20% {
+//     transform: translate(100%, 50%) rotate(90deg);
+//   }
+//   100% {
+//     transform: translate(100%, 50%) rotate(90deg);
+//   }
+// }
